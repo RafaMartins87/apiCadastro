@@ -74,7 +74,7 @@ namespace Api
                 });
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                x.IncludeXmlComments(xmlPath);
+                //x.IncludeXmlComments(xmlPath);
                 x.OperationFilter<SwaggerFileOperationFilter>();
             });
 
@@ -120,7 +120,7 @@ namespace Api
                 option.RoutePrefix = string.Empty;
             });
 
-            // app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
