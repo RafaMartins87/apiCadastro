@@ -41,6 +41,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "Log4Net.Async": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -57,6 +65,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Oracle.ManagedDataAccess": {
+              "target": "Package",
+              "version": "[19.6.0, )"
             }
           },
           "imports": [

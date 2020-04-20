@@ -1,0 +1,13 @@
+C:\Users\ThinkPad\Documents\apiCadastro\Api\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\ThinkPad\Documents\apiCadastro\Api\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\ThinkPad\Documents\apiCadastro\Api\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\ThinkPad\Documents\apiCadastro\Api\bin\Debug\netcoreapp2.2\Api.deps.json
+C:\Users\ThinkPad\Documents\apiCadastro\Api\bin\Debug\netcoreapp2.2\Api.runtimeconfig.json
+C:\Users\ThinkPad\Documents\apiCadastro\Api\bin\Debug\netcoreapp2.2\Api.runtimeconfig.dev.json
+C:\Users\ThinkPad\Documents\apiCadastro\Api\bin\Debug\netcoreapp2.2\Api.dll
+C:\Users\ThinkPad\Documents\apiCadastro\Api\obj\Debug\netcoreapp2.2\Api.csprojAssemblyReference.cache
+C:\Users\ThinkPad\Documents\apiCadastro\Api\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cache
+C:\Users\ThinkPad\Documents\apiCadastro\Api\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cs
+C:\Users\ThinkPad\Documents\apiCadastro\Api\obj\Debug\netcoreapp2.2\Api.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\Documents\apiCadastro\Api\obj\Debug\netcoreapp2.2\Api.AssemblyInfo.cs
+C:\Users\ThinkPad\Documents\apiCadastro\Api\obj\Debug\netcoreapp2.2\Api.RazorTargetAssemblyInfo.cache
