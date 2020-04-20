@@ -11,7 +11,7 @@ namespace Api.DbScripts
 
         public Dictionary<string, object> CadastroAdd(CadastroModel dados)
         {
-            string SQL = "INSERT INTO DADOS(ID, NOME, EMAIL) VALUES (:ID, :NOME, :EMAIL)";
+            string SQL = "INSERT INTO DADOS(ID, NOME, EMAIL) VALUES (@ID, @NOME, @EMAIL)";
 
             return new Dictionary<string, object>() { { SQL, dados } };
         }
