@@ -31,15 +31,12 @@ namespace Api
             switch (Base.TIPOBANCO)
             {
                 case "SQL":
-                    Base.STRINGCONEXAO = _config["ConnectionStrings:DESKTOP-H4A8TGI"];
+                    Base.STRINGCONEXAO = _config["ConnectionStrings:SQL"];
                     break;
                 case "ORACLE":
-                    Base.STRINGCONEXAO = _config["ConnectionStrings:DESKTOP-H4A8TGI"];
+                    Base.STRINGCONEXAO = _config["ConnectionStrings:ORACLE"];
                     break;
             }
-
-
-
         }
 
         public IConfiguration Configuration { get; }
