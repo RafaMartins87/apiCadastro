@@ -43,11 +43,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.35, )"
-            },
-            "Log4Net.Async": {
-              "target": "Package",
-              "version": "[2.0.4, )"
+              "version": "[1.60.6, )"
             },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -60,15 +56,35 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
-            "Oracle.ManagedDataAccess": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[19.6.0, )"
+              "version": "[12.0.2, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[2.19.31, )"
+            },
+            "SlapperAutomapper.Core": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
             }
           },
           "imports": [

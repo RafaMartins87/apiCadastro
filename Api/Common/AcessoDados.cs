@@ -363,6 +363,3 @@ namespace Api.Common
         }
     }
 }
-
-    }
-}

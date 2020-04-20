@@ -7,6 +7,8 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
+using Api.Common;
+using Api.Repository;
 
 namespace Api.Controllers
 {
@@ -30,16 +32,16 @@ namespace Api.Controllers
         /// <response code="511">Usuário não autenticado</response>
         /// <response code="500">Erro no método</response>
         [HttpPost]
-        public IActionResult Cadastro(CadastroModel dados)
+        public IActionResult CadastroAdd(CadastroModel dados)
         {
             try
             {
-                return Ok(_coletorDadosBufferRepository.ColetorDadosBufferPosicaoUpd(dados));
+                return Ok(_cadastroRepository.CadastroAdd(dados));
             }
             catch (Exception ex)
             {
-                new MyLog().GerarLog("Cadastro", "Erro ao buscar todas as avarias", ex);
-                return BadRequest(new Error(HttpStatusCode.InternalServerError, "Cadastro", ex.Message));
+                new MyLog().GerarLog("CadastroAdd", "Erro ao buscar todas as avarias", ex);
+                return BadRequest(new Error(HttpStatusCode.InternalServerError, "CadastroAdd", ex.Message));
             }
         }
 
