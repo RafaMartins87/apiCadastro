@@ -16,6 +16,26 @@ namespace Api.DbScripts
             return new Dictionary<string, object>() { { SQL, dados } };
         }
 
+        public string CadastroGet()
+        {
+            string SQL = "SELECT ID, NOME, EMAIL FROM DADOS";
+
+            return SQL;
+        }
+
+        public Dictionary<string, object> CadastroUpd(CadastroModel dados)
+        {
+            string SQL = "UPDATE DADOS SET NOME = @NOME, EMAIL = @EMAIL WHERE ID = @ID";
+
+            return new Dictionary<string, object>() { { SQL, dados } };
+        }
+
+        public Dictionary<string, object> CadastroDel(int id)
+        {
+            string SQL = "DELETE FROM DADOS WHERE ID = @ID";
+
+            return new Dictionary<string, object>() { { SQL, new { id = id} } };
+        }
 
         #region IDisposable Support
         private bool disposedValue = false;

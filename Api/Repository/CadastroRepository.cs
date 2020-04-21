@@ -32,10 +32,67 @@ namespace Api.Repository
 
                 dbScript.Dispose();
                 _cadastroBusiness.Dispose();
-                return "OK";
+                return "Dados Cadastrados";
 
             }
             catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public IEnumerable<CadastroModel> CadastroGet()
+        {
+            try
+            {
+                
+                var getCadastro = Pesquisar<CadastroModel>(dbScript.CadastroGet());
+
+                dbScript.Dispose();
+                _cadastroBusiness.Dispose();
+                return getCadastro;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public string CadastroUpd(CadastroModel dados)
+        {
+            try
+            {
+
+                var execCadastro = Executar(dbScript.CadastroUpd(dados));
+
+                dbScript.Dispose();
+                _cadastroBusiness.Dispose();
+                return "Dados = " + "Nome: " + dados.nome +  " |" + " Email: " +  dados.email + "inseridos";
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public string CadastroDel(int id)
+        {
+            try
+            {
+
+                var execCadastro = Executar(dbScript.CadastroDel(id));
+
+                dbScript.Dispose();
+                _cadastroBusiness.Dispose();
+                return "id = " + id + "deletado";
+
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

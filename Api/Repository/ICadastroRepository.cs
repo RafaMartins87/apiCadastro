@@ -9,6 +9,9 @@ namespace Api.Repository
     public interface ICadastroRepository
     {
         string CadastroAdd(CadastroModel dados);
+        string CadastroUpd(CadastroModel dados);
+        string CadastroDel(int id);
+        IEnumerable<CadastroModel> CadastroGet();
 
     }
 }
