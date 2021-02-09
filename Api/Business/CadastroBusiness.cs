@@ -10,7 +10,14 @@ namespace Api.Business
         private CadastroDbScript dbScript = new CadastroDbScript();
         public string CadastroValidaAdd(CadastroModel dados)
         {
-            return "OK";
+            if(dados.id == 1)
+            {
+                return "OK";
+            }
+            else
+            {
+                return "não ok";
+            }
         }
 
 
