@@ -12,7 +12,7 @@ namespace Api.Repository
     public class CadastroRepository : AcessoDados, ICadastroRepository, IDisposable 
     {
 
-
+        //comentei
         private CadastroBusiness _cadastroBusiness = new CadastroBusiness();
         private CadastroDbScript dbScript = new CadastroDbScript();
         public CadastroRepository() { Dispose(true); }
